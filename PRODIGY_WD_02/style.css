@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(35, 0, 69);
+    font-weight: bolder;
+    font-size: 48px;
+
+}
+.container{
+    background-color: rgb(35, 0, 69);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    min-width: 59%;
+    padding: 30px 16px;
+    border-radius: 4px;
+    box-shadow: 3px 3px rgb(213, 213, 213);
+}
+.timer-Display{
+    position: relative;
+    width: 112%;
+    background-color: rgb(172, 123, 255);
+    left: -6%;
+    padding: 13px 3px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(33, 0, 64);
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+    box-shadow: 3px 3px rgb(215, 215, 215);
+}
+.buttons{
+    width:80%;
+    margin: 24px auto 32px auto;
+    display:flex;
+    justify-content: space-around;
+}
+.buttons2{
+    width:87%;
+    margin:5px 34px 9px auto;
+    display:flex;
+    justify-content: space-around;
+    left:7%;
+}
+.buttons button{
+    font-size: 24px;
+    background-color: rgb(167, 113, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 9px;
+    padding: 11px 39px;
+    cursor: pointer;
+    outline: none;
+}
+.buttons2 button{
+    font-size: 24px;
+    background-color:  rgb(167, 113, 255);
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 9px;
+    padding: 11px 39px;
+    cursor: pointer;
+    outline: none;
+}
+.laps{
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+   position: relative;
+   left: -1%;
+    padding: 13px 3px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+
+}
+.buttons button:hover{
+    background-color: rgb(231, 205, 255);
+    color: rgb(36, 1, 69);
+}
+.buttons2 button:hover{
+    background-color: rgb(231, 205, 255);
+    color: rgb(36, 1, 69);
+}
