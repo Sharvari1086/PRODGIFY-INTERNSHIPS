@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRiders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        
+            <nav>
+                <label class="logo"><img src="logo.png" width="210px" height="80px"></label>
+                <ul>
+                <li></li>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="ContactUs.html">Contact us</a></li>
+               
+                </ul>
+              </nav>
+            
+        
+        <main class="min-h-screen">
+            <h1 class ="ttl">Explore Your Favourite Cars with CarRiders!!</h1>
+            <body>
+
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  
+                  <img src="lambo.jpg" style="width:100%">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="porsche.jpg" style="width:100%">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="nissan.jpeg" style="width:100%">
+                  
+                </div>
+                <div class="mySlides fade">
+                  
+                  <img src="mustang.jpg" style="width:100%">
+                  
+                </div>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+             
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                
+                </script>
+                <h1 class ="ttl">Wide Range Premium Cars!!</h1><br><br>
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="shelby.jpg">
+                      <img src="shelby.jpg" width="600" height="400">
+                    </a>
+                   
+                  </div>
+                </div>
+                
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="benz.jpg">
+                      <img src="benz.jpg" width="600" height="400">
+                    </a>
+                   
+                  </div>
+                </div>
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="lexus.jpg">
+                      <img src="lexus.jpg" width="600" height="400">
+                    </a>
+                   
+                  </div>
+                </div>
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="gt.jpg">
+                      <img src="gt.jpg"  width="600" height="400">
+                    </a>
+                    
+                  </div>
+                </div>
+                
+                <div class="clearfix"></div>
+                <h1 class ="ttl">Let's Start Exploring!!</h1><br><br>
+              
+                <img src ="mclaren.webp" class ="img"></img>
+                <h2 class="mc">The McLaren 720S coupe is purposeful and radical. With apex predator responses. This light and strong supercar accelerates from 0-60mph in an incredible 2.8 seconds when provoked. And can cover a quarter of a mile in 10.4 seconds. From a standing start.</h2>
+      
+                
+                <img src ="mercedes1.png" class ="img1"></img>
+                <h2 class="mc1">Mercedes Maybach S-Class Serenity and uniqueness characterise the design. Underlined by the mighty chrome radiator grille with "Maybach" lettering and the bonnet trim on the powerful front section. Around the vehicle, many other chrome features set brilliant highlights, perfectly complemented by the legendary two-tone paint finish if desired.</h2>
+                <img src ="lambohu.jpg" class ="img2"></img>
+                <h2 class="mc2">The first of its kind, the Huracán Sterrato explores a new frontier in driving pleasure, designed to push the envelope when the asphalt ends. The super sports car is equipped with a dedicated iteration of the LDVI (Lamborghini Integrated Vehicle Dynamics) system, featuring specific Strada and Sport calibrations and introducing Rally mode. </h2>
+            </main>
+<h6>Same as graphics, the audiovisual element of the website can be copyrighted if it is the original work of the owner. In case of someone else’s work is on the website, the ownership unless and until it transfers will not consider as work of the website owner.While not required, displaying a copyright notice on your website can be beneficial. It typically includes the copyright symbol (©), the year of first publication, and the name of the copyright owner. For example: © 2023 Your Company Name.</h6>
+
+    </div>
+    
+</body>
+
+</html>
